@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SWJD</title>
+    <div id="camera"></div>
+</head>
+<body>
+    <script src="./webcamjs/webcam.js"></script>
+    <script>
+        function showWebcam(){
+            Webcam.set({
+                width: 1200,
+                height: 600,
+                image_format: "jpeg",
+                jpeg_quality: 90
+            })
+
+            Webcam.attach('#camera')
+        }
+
+        showWebcam()
+    </script>
+</body>
+</html>
